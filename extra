@@ -1,0 +1,29 @@
+https://github.com/
+https://nodejs.org/en/
+https://code.visualstudio.com/download
+
+NodeJs > single thread, async, non block I/O
+V8 chrome
+compile code directly in machine lang
+
+
+npm > node package manger
+
+/////////////////
+Package.json
+//////////
+> starting point of appliction
+> name version lins description
+> script (start, test, dev)
+> packages
+
+//////////////////////
+Step to generate package.json
+/////////////////////
+**Node must be installed
+> go inside the folder using cmd/terminal
+> npm init
+> answer all question
+> type yes
+
+
