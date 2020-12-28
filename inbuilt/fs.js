@@ -1,14 +1,17 @@
 var fs = require('fs');
 
 //write file
-fs.writeFile('mytext.xls','Developer Funnel',function(err){
+/*fs.writeFile('mytext.xls','Developer Funnel',function(err){
     if(err) throw err;
     console.log("File Created")
-})
+})*/
 
 /*
 fs.appendFile('mytext1.txt','Developer Funnel1 \n',function(err){
-    if(err) throw err;
+    if(err) {
+        var myerr = "my errr"
+        console.log(myerr);
+    }
     console.log("Data Added")
 })*/
 
