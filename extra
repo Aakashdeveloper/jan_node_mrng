@@ -97,3 +97,6 @@ npm i -g @aakashdeveloper/create-node-app
 >>>>next all time<<<<<<<
 > go inside folder
 > generate
+
+/////To Contious development///
+npm i -g nodemon
