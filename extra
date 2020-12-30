@@ -1,6 +1,7 @@
 Basic JavaScript
 NPM
 Basic NodeJS(in built)(Os,file,http)
+////////
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Third Party Api (Weather Api)
 Node-Es6(.babel)
@@ -100,3 +101,10 @@ npm i -g @aakashdeveloper/create-node-app
 
 /////To Contious development///
 npm i -g nodemon
+
+
+function add(a,b){
+      return a+b
+}
+
+add(1,2)
