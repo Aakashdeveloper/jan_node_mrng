@@ -2,8 +2,8 @@ Basic JavaScript
 NPM
 Basic NodeJS(in built)(Os,file,http)
 Third Party Api (Weather Api)
-////////
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+////////
 Node-Es6(.babel)
 Redis  > 6379
 Oauth(with github)
@@ -111,3 +111,65 @@ add(1,2)
 https://github.com/Aakashdeveloper/public-apis
 
 NoSql> it is not a sql
+
+Sno | Hindi | English| Computer
+1   | 80    |        |
+2   |       | 80     |
+3   | 80    |        | 85
+
+[
+      {
+            sno:1,
+            Hindi:80
+      },
+      {
+            sno:2,
+            English:80
+      },
+      {
+            sno:1,
+            Hindi:80,
+            Computer:85
+      }
+
+]
+
+https://www.mongodb.com/try/download/community
+install server
+> create one folder in C drive by the name of data
+> in data make next folder db 
+C:/data/db
+
+# Server (27017)
+> open cmd
+> navigate to the folder c:/programmfile/mongodb/server/4.4/bin 
+> type mongod
+
+# Client  (test quries)
+> open cmd
+> navigate to the folder c:/programmfile/mongodb/server/4.4/bin 
+> type mongo 
+
+mongodb://127.0.0.1:27017
+
+SQl       MongoDb
+--------------------
+Database  Database
+Table     Collections
+row       Documents
+
+show dbs 
+////Create Db/////
+use databasename
+
+////Create Collections/////
+db.student.insert({_id:1,name:"john"})
+
+show collections
+
+db.student.find()
+
+db.hotels.find().pretty()
+
+db.hotels.find({_id:"3"}).pretty()
+db.hotels.count({city:"1"})
