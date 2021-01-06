@@ -3,10 +3,11 @@ NPM
 Basic NodeJS(in built)(Os,file,http)
 Third Party Api (Weather Api)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
-////////
 Node-Es6(.babel)
 Redis  > 6379
+////////
 Oauth(with github)
+Oauth(with google)
 Github
 Login/Logout(JWT)
 MongoDb Basic >27017
@@ -173,3 +174,18 @@ db.hotels.find().pretty()
 
 db.hotels.find({_id:"3"}).pretty()
 db.hotels.count({city:"1"})
+
+////////////////////
+npm i @babel/core @babel/preset-env @babel/register
+
+
+////////////////////////
+https://github.com/dmajkic/redis/downloads
+redis-server (6379)
+redis-cli
+
+KEYS *
+set key value
+set token 878977
+get key 
+setex key time value
