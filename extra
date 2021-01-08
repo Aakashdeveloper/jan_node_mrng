@@ -5,8 +5,8 @@ Third Party Api (Weather Api)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Node-Es6(.babel)
 Redis  > 6379
-////////
 Oauth(with github)
+////////
 Oauth(with google)
 Github
 Login/Logout(JWT)
