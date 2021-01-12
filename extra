@@ -6,10 +6,11 @@ NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Node-Es6(.babel)
 Redis  > 6379
 Oauth(with github)
-////////
 Oauth(with google)
-Github
+////////
 Login/Logout(JWT)
+Github
+
 MongoDb Basic >27017
 Api with NodeJS(Rest)
 DashBoard(Crud)
@@ -197,3 +198,5 @@ https://docs.github.com/en/free-pro-team@latest/developers/apps/authorizing-oaut
 
 
 npm i express cors ejs request superagent   
+
+npm i bcryptjs body-parser cors express jsonwebtoken mongoose
