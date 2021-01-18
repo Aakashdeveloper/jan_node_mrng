@@ -200,3 +200,10 @@ https://docs.github.com/en/free-pro-team@latest/developers/apps/authorizing-oaut
 npm i express cors ejs request superagent   
 
 npm i bcryptjs body-parser cors express jsonwebtoken mongoose
+
+npm i body-parser chai chai-http mocha cors ejs express mongodb
+
+C > create (post)
+R > Read(get)
+U > update(put)
+D > Delete(delete)

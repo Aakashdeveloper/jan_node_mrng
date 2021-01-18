@@ -1,0 +1,60 @@
+db.hotels.find().pretty()
+
+db.hotels.find({city_name:"New Delhi"}).pretty()
+
+//projection
+
+db.hotels.find({city_name:"New Delhi"},{name:1,city_name:1,_id:0}).pretty()
+
+db.hotels.find({},{name:1,city_name:1,_id:0}).pretty()
+
+db.hotels.find({"type.roomtype":"3"},{name:1,city_name:1,_id:0}).pretty()
+
+db.hotels.find({cost:{$lt:5000,$gt:3000}},{name:1,_id:0,cost:1}).pretty()
+
+db.hotels.find({$and:[{cost:{$lt:5000,$gt:3000}},{city_name:"Mumbai"}]},{name:1,_id:0,cost:1,city_name:"Mumbai"}).pretty()
+
+db.hotels.find({$or:[{cost:{$lt:5000,$gt:3000}},{city_name:"Mumbai"}]},{name:1,_id:0,cost:1,city_name:"Mumbai"}).pretty()
+
+
+/////Insert////
+db.collectionname.insert({
+    _id:1,
+    name:"Abc"
+})
+
+db.collectionname.insert(
+    [
+        {
+            _id:1,
+            name:"Abc"
+        },
+        {
+            _id:2,
+            name:"Xyz"
+        }
+    ]
+)
+
+//update
+db.collectionname.update(
+    {_id:3},
+    {
+        $set:{
+            phone:4334
+        }
+    },
+    {
+        upsert:true
+    }
+)
+
+//remove
+db.collectionname.remove({})
+
+db.collectionname.remove({_id:1})
+
+
+ db.hotels.count({city_name:"New Delhi"})
+
+ db.users.drop()
