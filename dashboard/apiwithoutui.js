@@ -12,39 +12,17 @@ let col_name="userdata";
 app.use(cors());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-app.use(express.static(__dirname+'/public'));
-app.set('views','./src/views');
-app.set('view engine','ejs');
 
 //health
 app.get('/',(req,res) => {
-    db.collection(col_name).find({isActive:true}).toArray((err,result) => {
-        if(err) throw err;
-        res.render('index',{data:result})
-    })
-})
-
-app.get('/health',(req,res) => {
-    res.status(200).send("Health Ok")
-})
-
-app.get('/new',(req,res) => {
-    res.render('admin')
+    res.status(200).send('Health Ok')
 })
 
 //postUser
 app.post('/addUser',(req,res) => {
-    const data={
-        "name":req.body.name,
-        "city":req.body.city,
-        "phone":req.body.phone,
-        "isActive":true,
-        "role":req.body.role?req.body.role:'User'
-    }
-    db.collection(col_name).insert(data,(err,result) => {
+    db.collection(col_name).insert(req.body,(err,result) => {
         if(err) throw err;
-        //res.status(200).send("Data Added")
-        res.redirect('/')
+        res.status(200).send("Data Added")
     })
 });
 

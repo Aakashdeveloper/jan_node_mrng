@@ -8,15 +8,14 @@ Redis  > 6379
 Oauth(with github)
 Oauth(with google)
 Login/Logout(JWT)
-////////
-Github
 MongoDb Basic >27017
 Api with NodeJS(Rest)
 DashBoard(Crud)
 Testing
+////////
+Github
 OO_NodeJs
 GraphQl API
-
 NodeJs with postgres
 Chatapp
 ----Production----
