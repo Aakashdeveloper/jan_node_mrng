@@ -12,11 +12,11 @@ MongoDb Basic >27017
 Api with NodeJS(Rest)
 DashBoard(Crud)
 Testing
+GraphQl API
+OO_NodeJs
+NodeJs with postgres
 ////////
 Github
-OO_NodeJs
-GraphQl API
-NodeJs with postgres
 Chatapp
 ----Production----
 Nginx
@@ -206,3 +206,29 @@ C > create (post)
 R > Read(get)
 U > update(put)
 D > Delete(delete)
+
+npm i axios cors express express-graphql graphql
+
+npm i -g json-server
+json-server --watch db.json --port 8900
+
+
+////
+Query
+{
+  Product(id:4){
+    name,
+    imageUrl
+  }
+}
+
+
+mutation{
+  addProducts(id:1234,
+    				name: "MadMax",
+            rate: 3.5){
+    id
+  }
+}
+
+npm i express mongodb @babel/core @babel/register @babel/preset-env
