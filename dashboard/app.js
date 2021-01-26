@@ -5,7 +5,7 @@ const mongo = require('mongodb');
 const MongoClient = mongo.MongoClient;
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const mongourl = `mongodb://localhost:27017`;
+const mongourl = `mongodb+srv://admin:mongo@123@cluster0-f8vmc.mongodb.net/hotels?retryWrites=true&w=majority`;
 let db;
 let col_name="userdata";
 

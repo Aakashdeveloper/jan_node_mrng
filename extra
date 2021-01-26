@@ -15,15 +15,14 @@ Testing
 GraphQl API
 OO_NodeJs
 NodeJs with postgres
-////////
 Github
 Chatapp
+Email With Node(sendgrid)
 ----Production----
 Nginx
 Docker
 Heroku
 Pm2
-Email With Node(sendgrid)
 
 
 -------NOT----
@@ -232,3 +231,23 @@ mutation{
 }
 
 npm i express mongodb @babel/core @babel/register @babel/preset-env
+
+github
+///////
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/dashboardapp.git
+git push -u origin master
+
+
+//////Global////
+Pm2
+
+npm i -g pm2
+
+pm2 start starting file name
+pm2 status
+pm2 stop start
+pm2 start api.js -i 4
